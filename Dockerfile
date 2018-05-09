@@ -5,7 +5,7 @@ LABEL author="William Desportes" \
     vcs-url="https://github.com/williamdes/docker-web"
 
 RUN apt-get update && \
-apt-get install git imagemagick inkscape -y \
+apt-get install git imagemagick inkscape python-dbus -y \
 && apt-get autoremove -y
 
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
