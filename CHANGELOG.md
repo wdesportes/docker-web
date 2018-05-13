@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 
+## [1.0.3] - 2018-05-13
+### Added
+- [java](https://www.java.com/)
+
+### Removed
+- [python-dbus](https://pypi.org/project/dbus-python/)
+
 ## [1.0.2] - 2018-05-13
 ### Added
 - [html5validator](https://github.com/svenkreiss/html5validator)
@@ -19,7 +26,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0.1] - 2018-05-09
 ### Added
 - CHANGELOG
-- python-dbus
+- [python-dbus](https://pypi.org/project/dbus-python/)
 
 ## [1.0.0] - 2018-05-08
 ### Added
