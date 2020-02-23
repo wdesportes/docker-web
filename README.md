@@ -1,13 +1,13 @@
 # Docker web
 
-Uses as base image : `debian:stretch-slim`
+Uses as base image : `alpine:3.11`
 
-Size: ~`600MB`
+Size: ~`410MB`
 > If you find a way to reduce the size, create a Pull Request !
 
 ## Includes
 - [ImageMagick](https://www.imagemagick.org/)
-- [PHP 7.2](http://www.php.net/ChangeLog-7.php)
+- [PHP 7.3](http://www.php.net/ChangeLog-7.php)
 - [Inkscape](https://inkscape.org/)
 - [Git](https://git-scm.com/)
 - [Composer](https://getcomposer.org/)
@@ -18,7 +18,3 @@ Size: ~`600MB`
 - [curl](https://curl.haxx.se/)
 - [gnupg](https://www.gnupg.org/)
 - [java](https://www.java.com/)
-
-## More
-
-PHP 7.2 tutorial from @collinodell's [blog](https://www.colinodell.com/blog/201711/installing-php-72)
