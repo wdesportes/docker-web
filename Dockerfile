@@ -8,4 +8,8 @@ RUN apk add --no-cache wget curl yarn gnupg \
 php7 git imagemagick inkscape python3 openjdk8-jre-base composer && \
 pip3 install --upgrade pip && \
 pip3 --no-cache-dir install pjv html5validator && \
-yarn global add broken-link-checker-local
+yarn global add broken-link-checker-local && \
+echo 'Quality control' && \
+java -version && gpg --version && git --version && composer --version && \
+pjv -h && wget --version && curl --version && inkscape --version && \
+php --version && html5validator --version && blcl --version && magick --version
