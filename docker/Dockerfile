@@ -19,7 +19,7 @@ LABEL author="William Desportes" \
     org.label-schema.schema-version="1.0"
 
 
-RUN apk add --no-cache wget curl yarn gnupg \
+RUN apk add --no-cache wget curl yarn gnupg py3-pip \
 php7 git imagemagick inkscape python3 openjdk8-jre-base composer && \
 pip install --upgrade pip && \
 pip --no-cache-dir install pjv html5validator && \
