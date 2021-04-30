@@ -18,12 +18,12 @@ jobs:
             username: ${{ secrets.DOCKER_REPOSITORY_LOGIN }}
             password: ${{ secrets.DOCKER_REPOSITORY_PASSWORD }}
         - name: Build action image
-          run: IMAGE_TAG="docker.io/wdesportes/docker-web:latest" make docker-build
+          run: IMAGE_TAG="docker.io/williamdes/docker-web:latest" make docker-build
 
         - name: Sign and push docker image
           uses: sudo-bot/action-docker-sign@latest
           with:
-            image-ref: "docker.io/wdesportes/docker-web:latest"
+            image-ref: "docker.io/williamdes/docker-web:latest"
             private-key-id: "${{ secrets.DOCKER_PRIVATE_KEY_ID }}"
             private-key: ${{ secrets.DOCKER_PRIVATE_KEY }}
             private-key-passphrase: ${{ secrets.DOCKER_PRIVATE_KEY_PASSPHRASE }}
