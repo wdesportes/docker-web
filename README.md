@@ -10,7 +10,7 @@ Size: `474MB`
 ## Includes
 
 - [ImageMagick](https://www.imagemagick.org/)
-- [PHP 7.3](http://www.php.net/ChangeLog-7.php)
+- [PHP 7.4](http://www.php.net/ChangeLog-7.php)
 - [Inkscape](https://inkscape.org/)
 - [Git](https://git-scm.com/)
 - [Composer](https://getcomposer.org/)
