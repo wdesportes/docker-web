@@ -21,8 +21,8 @@ LABEL author="William Desportes" \
 
 RUN apk add --no-cache wget curl yarn gnupg \
 php7 git imagemagick inkscape python3 openjdk8-jre-base composer && \
-pip3 install --upgrade pip && \
-pip3 --no-cache-dir install pjv html5validator && \
+pip install --upgrade pip && \
+pip --no-cache-dir install pjv html5validator && \
 yarn global add broken-link-checker-local && \
 echo 'Quality control' && \
 java -version && gpg --version && git --version && composer --version && \
