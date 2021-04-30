@@ -1,14 +1,14 @@
 # Docker web
 
-[![](https://images.microbadger.com/badges/image/williamdes/docker-web.svg)](https://microbadger.com/images/williamdes/docker-web "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/commit/williamdes/docker-web.svg)](https://microbadger.com/images/williamdes/docker-web "Get your own commit badge on microbadger.com")
+[![Build docker image](https://github.com/wdesportes/docker-web/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/wdesportes/docker-web/actions/workflows/build.yml)
 
-Uses as base image : `alpine:3.11`
+Uses as base image : `alpine:3.13`
 
-Size: ~`410MB`
+Size: `474MB`
 > If you find a way to reduce the size, create a Pull Request !
 
 ## Includes
+
 - [ImageMagick](https://www.imagemagick.org/)
 - [PHP 7.3](http://www.php.net/ChangeLog-7.php)
 - [Inkscape](https://inkscape.org/)

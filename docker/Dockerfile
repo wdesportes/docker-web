@@ -20,11 +20,13 @@ LABEL author="William Desportes" \
 
 
 RUN apk add --no-cache wget curl yarn gnupg py3-pip \
-php7 git imagemagick inkscape python3 openjdk8-jre-base composer && \
-pip install --upgrade pip && \
-pip --no-cache-dir install pjv html5validator && \
-yarn global add broken-link-checker-local && \
-echo 'Quality control' && \
-java -version && gpg --version && git --version && composer --version && \
-pjv -h && wget --version && curl --version && inkscape --version && \
-php --version && html5validator --version && blcl --version && magick --version
+    php7 git imagemagick inkscape python3 openjdk8-jre-base composer && \
+    pip install --upgrade pip && \
+    pip --no-cache-dir install pjv html5validator && \
+    yarn --cache-folder /tmp/.junk global add broken-link-checker-local && \
+    echo 'Quality control' && \
+    java -version && gpg --version && git --version && composer --version && \
+    pjv -h && wget --version && curl --version && inkscape --version && \
+    php --version && html5validator --version && blcl --version && magick --version && \
+    yarn cache clean && \
+    rm -rf /root/.cache /tmp/.junk /tmp/* /var/cache/fontconfig /share/.cache
