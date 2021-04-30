@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine:3.13
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -17,7 +17,7 @@ LABEL author="William Desportes" \
     org.label-schema.vendor="Williamdes" \
     org.label-schema.version=$VERSION \
     org.label-schema.schema-version="1.0"
-                
+
 
 RUN apk add --no-cache wget curl yarn gnupg \
 php7 git imagemagick inkscape python3 openjdk8-jre-base composer && \
